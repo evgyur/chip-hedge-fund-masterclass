@@ -9,4 +9,11 @@ class ChartSettingsTests(unittest.TestCase):
   guide=(R/'references/birzhevik-chart.md').read_text()
   for phrase in ['не импортируемый шаблон','только для чтения','ограничивает число индикаторов','chart-setup.md','реконструкция']:self.assertIn(phrase,guide)
   for name in ['README.md','SKILL.md','references/tradingview.md']:self.assertIn('birzhevik-chart.md',(R/name).read_text())
+ def test_mcp_prompt_requests_operations_and_truthful_readback(self):
+  text=(R/'references/birzhevik-chart-prompt.md').read_text()
+  for phrase in ['layout_copy','indicator_add','indicator_get_inputs','indicator_set_inputs','layout_save','study_template_get','expected_layout_id','idempotency_key','TV_ENABLE_GENERIC_UI=0','частичный результат']:
+   self.assertIn(phrase,text)
+  self.assertIn('TV_READONLY принудительно включён',text)
+  self.assertIn('не является технически ограниченным только этой задачей',text)
+  self.assertIn('birzhevik-chart-prompt.md',(R/'SKILL.md').read_text())
 if __name__=='__main__':unittest.main()

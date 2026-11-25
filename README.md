@@ -24,7 +24,7 @@ https://github.com/evgyur/chip-hedge-fund-masterclass
 |---|---|---|
 | Страница портфеля | [Шаблон](assets/dashboard.html), [условные данные](assets/combined-demo.json), API/JSON адаптеры | [Инструкция](references/dashboard.md) |
 | График TradingView | Полный публичный исходник [tradingview-chip](https://github.com/evgyur/tradingview-chip) на commit `abb651b5627946063f8dbd9931ec1f3ad1180841` | [Инструкция](references/tradingview.md) |
-| Вид графика Биржевика | [Параметры](assets/birzhevik-chart-settings.json), реконструкция по публичным видео | [Установка вручную и через подсказки Codex](references/birzhevik-chart.md) |
+| Вид графика Биржевика | [Параметры](assets/birzhevik-chart-settings.json), реконструкция по публичным видео | [Настроить через MCP](references/birzhevik-chart-prompt.md) · [Ручной запасной путь](references/birzhevik-chart.md) |
 | Мосбиржа через Альфа PRO | Инструкция native MCP и нормализатор фактических ответов | [Инструкция](references/alfa-mcp.md) |
 | Поиск Parallel | Подключение официального MCP и проверка источников | [Инструкция](references/parallel.md) |
 | Размер позиции | Детерминированный расчёт, комиссии и тесты | [Инструкция](references/risk.md) |
