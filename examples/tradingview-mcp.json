@@ -1,0 +1,14 @@
+{
+  "mcpServers": {
+    "tradingview-chip": {
+      "command": "<ABSOLUTE_NODE_24_EXECUTABLE>",
+      "args": [
+        "<ABSOLUTE_PATH_TO_THIS_REPOSITORY>/scripts/tradingview.mjs"
+      ],
+      "env": {
+        "TV_CDP_ENDPOINT": "http://127.0.0.1:9222",
+        "TV_DATA_DIR": "<PRIVATE_RUNTIME_DIRECTORY_OUTSIDE_REPOSITORY>"
+      }
+    }
+  }
+}

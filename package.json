@@ -1,0 +1,11 @@
+{
+  "name": "chip-hedge-fund-masterclass",
+  "version": "1.0.0",
+  "private": true,
+  "license": "MIT",
+  "scripts": {
+    "test": "python3 -m unittest discover -s tests -v",
+    "test:core": "node scripts/verify-core.cjs",
+    "test:tradingview": "node vendor/tradingview-chip/scripts/test.mjs"
+  }
+}

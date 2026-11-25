@@ -1,0 +1,6 @@
+interface:
+  display_name: "Торговая идея и дашборд в Codex"
+  short_description: "Новости, график, риск и портфель двух рынков"
+  default_prompt: "Используй $chip-hedge-fund-masterclass и помоги начать с учебного примера."
+policy:
+  allow_implicit_invocation: false

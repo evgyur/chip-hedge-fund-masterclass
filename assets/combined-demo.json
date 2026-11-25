@@ -1,0 +1,120 @@
+{
+  "schema_version": 2,
+  "accounts": [
+    {
+      "id": "onchain-demo",
+      "label": "Ончейн-перпы · учебный пример",
+      "market": "onchain",
+      "mode": "sample",
+      "currency": "USD",
+      "as_of": "2026-01-01T00:00:00Z",
+      "equity": 10000,
+      "margin_used": 2480,
+      "source": "Условные цены и позиции; API не подключён",
+      "coverage": {
+        "included": 2,
+        "excluded": []
+      },
+      "positions": [
+        {
+          "id": "1",
+          "symbol": "BTC",
+          "venue": "Hyperliquid",
+          "kind": "perp",
+          "signed_size": 0.1,
+          "quantity_unit": "ед.",
+          "currency": "USD",
+          "multiplier": 1,
+          "entry_price": 60000,
+          "mark_price": 62000,
+          "unrealized_pnl": 200.0,
+          "margin_used": 1240.0,
+          "leverage": 5,
+          "liquidation_price": null
+        },
+        {
+          "id": "2",
+          "symbol": "ETH",
+          "venue": "Hyperliquid",
+          "kind": "perp",
+          "signed_size": 2,
+          "quantity_unit": "ед.",
+          "currency": "USD",
+          "multiplier": 1,
+          "entry_price": 3000,
+          "mark_price": 3100,
+          "unrealized_pnl": 200,
+          "margin_used": 1240.0,
+          "leverage": 5,
+          "liquidation_price": null
+        }
+      ]
+    },
+    {
+      "id": "moex-demo",
+      "label": "Мосбиржа · учебный пример",
+      "market": "moex",
+      "mode": "sample",
+      "currency": "RUB",
+      "as_of": "2026-01-01T00:00:00Z",
+      "equity": 1000000,
+      "cash": 810000,
+      "margin_used": 0,
+      "source": "Условные цены и позиции; брокер не подключён",
+      "coverage": {
+        "included": 3,
+        "excluded": []
+      },
+      "positions": [
+        {
+          "id": "1",
+          "symbol": "SBER",
+          "venue": "MOEX",
+          "kind": "stock",
+          "signed_size": 300,
+          "quantity_unit": "шт.",
+          "currency": "RUB",
+          "multiplier": 1,
+          "entry_price": 290,
+          "mark_price": 300,
+          "unrealized_pnl": 3000,
+          "margin_used": null,
+          "leverage": null,
+          "liquidation_price": null
+        },
+        {
+          "id": "2",
+          "symbol": "LKOH",
+          "venue": "MOEX",
+          "kind": "stock",
+          "signed_size": 10,
+          "quantity_unit": "шт.",
+          "currency": "RUB",
+          "multiplier": 1,
+          "entry_price": 7200,
+          "mark_price": 7000,
+          "unrealized_pnl": -2000,
+          "margin_used": null,
+          "leverage": null,
+          "liquidation_price": null
+        },
+        {
+          "id": "3",
+          "symbol": "GAZP",
+          "venue": "MOEX",
+          "kind": "stock",
+          "signed_size": 200,
+          "quantity_unit": "шт.",
+          "currency": "RUB",
+          "multiplier": 1,
+          "entry_price": 145,
+          "mark_price": 150,
+          "unrealized_pnl": 1000,
+          "margin_used": null,
+          "leverage": null,
+          "liquidation_price": null
+        }
+      ]
+    }
+  ]
+}
