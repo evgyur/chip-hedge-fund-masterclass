@@ -1,0 +1,30 @@
+{
+  "schema_version": 1,
+  "method_verified": false,
+  "evidence_kind": "selected public replay frames, not a settings export",
+  "public_sources": [
+    {"url": "https://rutube.ru/video/87e77e006a0b0611364ae54b78d597eb/", "date": "2026-11-12", "timecode": "06:39", "symbol": "IRUS2", "timeframe": "D"},
+    {"url": "https://rutube.ru/video/87e77e006a0b0611364ae54b78d597eb/", "date": "2026-11-12", "timecode": "15:15", "symbol": "GAZP", "timeframe": "W"},
+    {"url": "https://rutube.ru/video/3ba66b2f1b3a4b1adb75b5ecb3bb356a/", "date": "2026-10-27", "timecode": "12:52", "symbol": "IRUS2", "timeframe": "D"}
+  ],
+  "observed_settings": {
+    "ema": {"periods": [9, 50, 100, 200], "source": "close"},
+    "bollinger": {"length": 20, "basis": "SMA", "source": "close", "multiplier": 2},
+    "cci": {"length": 20, "source": "hlc3", "smoothing": "not established"},
+    "rsi": {"length": 14, "source": "close", "smoothing": "not established"},
+    "mfi": {"length": 14, "missing_volume": "unavailable, not a valid factor"}
+  },
+  "visual_reference": {
+    "background": "white",
+    "up_candles": "green",
+    "down_candles": "red",
+    "ema_palette": {"9": "black", "50": "orange", "100": "green", "200": "red"},
+    "lower_panes": ["CCI", "RSI", "MFI"],
+    "exact_rgb_values_verified": false,
+    "original_drawing_coordinates_verified": false,
+    "reconstructed_drawings_must_be_labelled_approximate": true
+  },
+  "prototype_only_conditions": ["price_vs_ema9", "ema50_100_200_order", "cci_threshold_0", "rsi_threshold_50", "mfi_threshold_50", "symmetric_short", "equal_factor_count"],
+  "unverified": ["entry rules", "factor weights", "invalidation rules", "oscillator smoothing", "IV-TG formula", "exact drawing anchors"],
+  "repainting_warning": {"script": "LuxAlgo Nadaraya-Watson Envelope", "visible_date": "2026-10-27", "mode": "Repainting Mode Enabled", "historical_picture_is_not_a_fixed_signal_record": true}
+}

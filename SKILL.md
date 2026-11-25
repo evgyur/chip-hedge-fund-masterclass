@@ -19,6 +19,7 @@ license: MIT
 ## Выбирай модуль по задаче
 - Найти первоисточник / подключить Parallel: [поиск](references/parallel.md).
 - Подключить TradingView / прочитать график: [TradingView Chip](references/tradingview.md). Используй наш [публичный проект](https://github.com/evgyur/tradingview-chip), уже включённый в `vendor/tradingview-chip`, а не другой одноимённый MCP.
+- Настроить вид графика Биржевика: [пошаговая памятка](references/birzhevik-chart.md), [параметры](assets/birzhevik-chart-settings.json). Вручную в отдельном макете, без снятия read-only MCP; это реконструкция, не официальный шаблон.
 - Подключить Альфа PRO MCP / прочитать выбранный счёт: [Альфа](references/alfa-mcp.md).
 - Построить страницу портфеля и получить данные двух рынков: [дашборд](references/dashboard.md).
 - Рассчитать количество и сохранить план сделки: [риск и план](references/risk.md).
